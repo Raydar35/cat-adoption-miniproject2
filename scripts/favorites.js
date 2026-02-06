@@ -25,6 +25,15 @@
 
   const favorites = loadFavorites();
 
+  function updateFavoritesCountBadge() {
+    const badge = byId("favoritesCountBadge");
+    if (!badge) return;
+
+    const count = favorites.size;
+    badge.textContent = String(count);
+    badge.hidden = count === 0;
+  }
+
   function setStarState(buttonEl, isFav) {
     const iconEl = buttonEl.querySelector("i");
     if (!iconEl) return;
@@ -116,6 +125,7 @@
       saveFavorites(favorites);
       syncAllStars();
       renderFavorites();
+      updateFavoritesCountBadge();
       return;
     }
 
@@ -134,10 +144,12 @@
     saveFavorites(favorites);
     setStarState(favBtn, nextFav);
     renderFavorites();
+    updateFavoritesCountBadge();
   });
 
   document.addEventListener("DOMContentLoaded", () => {
     syncAllStars();
     renderFavorites();
+    updateFavoritesCountBadge();
   });
 })();

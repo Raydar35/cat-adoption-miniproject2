@@ -218,6 +218,32 @@ footer .footer-brand .logo {
   margin-right: -6px;
 }
 
+/* Favorites count badge on Cats navbar button */
+.navbar #catsFavoritesBtn {
+  position: relative;
+}
+
+.favorites-count-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+
+  border-radius: 999px;
+  background: var(--special-color);
+  color: white;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+
+  border: 2px solid var(--background-color);
+}
+
 .navbar .nav-btn i {
   color: inherit; /* icon follows the link text color */
 }
