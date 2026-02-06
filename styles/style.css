@@ -332,9 +332,43 @@ footer .footer-brand .logo {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
+  position: relative;
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.1),
     0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Favorite star button (bottom-right of each card) */
+.favorite-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+/* Ensure this overrides the global button styles */
+.favorite-btn:hover {
+  background-color: transparent;
+}
+
+.favorite-btn i {
+  color: var(--special-color);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.favorite-btn:focus-visible {
+  outline: 2px solid var(--special-color);
+  outline-offset: 3px;
 }
 .card img {
   /* Essential image styles */
