@@ -1,4 +1,4 @@
-# Darvy: Local Cat Adoption
+# Darvy: Local Cat Adoption (MiniProject 2)
 
 ### 
 **Group Members:** Darius Beckford, Ivy Bowers
