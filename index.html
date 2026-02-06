@@ -26,7 +26,7 @@
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
           <li>
-            <a class="nav-btn nav-btn--outline" href="">
+            <a class="nav-btn nav-btn--outline" href="#" id="catsFavoritesBtn" aria-controls="favoritesPanel" aria-expanded="false">
               <i class="fa-solid fa-paw"></i> Cats
             </a>
           </li>
@@ -64,12 +64,23 @@
         comes with a unique personality and charm! Adopt one today and give them a
         loving home. Stop by our store or click on an individual cat's icon below to learn more about them all.
       </p>
+
+      <div class="favorites-panel" id="favoritesPanel" hidden>
+        <div class="favorites-panel__header">
+          <h3>Favorited Cats</h3>
+          <button type="button" id="clearFavoritesBtn">Clear Favorites</button>
+        </div>
+
+        <p id="favoritesEmpty" class="favorites-empty">No favorites yet — click a star.</p>
+        <div id="favoritesList" class="favorites-list"></div>
+      </div>
+
       <div class="cards">
         <div class="card">
           <img src="../assets/catadoptee1.jpeg" alt="lilly" />
           <h3>Leo [male, 2 yrs]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Leo" data-cat-img="../assets/catadoptee1.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
@@ -77,7 +88,7 @@
           <img src="../assets/catadoptee2.jpeg" alt="lilly" />
           <h3>Hazel [female, 8 yrs]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Hazel" data-cat-img="../assets/catadoptee2.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
@@ -85,7 +96,7 @@
           <img src="../assets/catadoptee3.jpeg" alt="lilly" />
           <h3>Bundt [male, 5 yrs]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Bundt" data-cat-img="../assets/catadoptee3.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
@@ -93,7 +104,7 @@
           <img src="../assets/catadoptee4.jpeg" alt="rose" />
           <h3>Hugo [male, 9 mos]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Hugo" data-cat-img="../assets/catadoptee4.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
@@ -101,7 +112,7 @@
           <img src="../assets/catadoptee5.jpeg" alt="rose" />
           <h3>Mocha [female, 3 yrs]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Mocha" data-cat-img="../assets/catadoptee5.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
@@ -109,7 +120,7 @@
           <img src="../assets/catadoptee6.jpeg" alt="rose" />
           <h3>Quincy [male, 1 yr]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Quincy" data-cat-img="../assets/catadoptee6.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
@@ -117,7 +128,7 @@
           <img src="../assets/catadoptee7.jpeg" alt="fall" />
           <h3>Snowball [female, 2 yrs]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Snowball" data-cat-img="../assets/catadoptee7.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
@@ -125,7 +136,7 @@
           <img src="../assets/catadoptee8.jpeg" alt="fall" />
           <h3>Cheddar [male, 4 yrs]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Cheddar" data-cat-img="../assets/catadoptee8.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
@@ -133,7 +144,7 @@
           <img src="../assets/catadoptee9.jpeg" alt="fall" />
           <h3>Binx [male, 3 mos]</h3>
           <button>Learn More</button>
-          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite">
+          <button class="favorite-btn" type="button" aria-pressed="false" aria-label="Toggle favorite" data-cat-name="Binx" data-cat-img="../assets/catadoptee9.jpeg">
             <i class="fa-regular fa-star" aria-hidden="true"></i>
           </button>
         </div>
